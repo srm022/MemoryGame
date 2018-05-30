@@ -10,33 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MemoryGame
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Logika interakcji dla klasy HighscoresWindow.xaml
+    /// </summary>
+    public partial class HighscoresWindow : Window
     {
-        public MainWindow()
+        public HighscoresWindow()
         {
             InitializeComponent();
         }
 
-        private void highscoresButton_Click(object sender, RoutedEventArgs e)
-        {
-            HighscoresWindow hsw = new HighscoresWindow();
-            hsw.ShowDialog();
-        }
-
-        private void startButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void exitButton_Click(object sender, RoutedEventArgs e)
+        private void closeButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
     }
 }

@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,13 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="HighscoresWindow.xaml.cs">
-      <DependentUpon>HighscoresWindow.xaml</DependentUpon>
+    <Compile Include="GameLogic.cs" />
+    <Compile Include="GameWindow.xaml.cs">
+      <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SizeSelectionWindow.xaml.cs">
-      <DependentUpon>SizeSelectionWindow.xaml</DependentUpon>
+    <Compile Include="ImageList.cs" />
+    <Compile Include="Properties\memoItems.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>memoItems.resx</DependentUpon>
     </Compile>
-    <Page Include="HighscoresWindow.xaml">
+    <Compile Include="Tile.cs" />
+    <Page Include="GameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,10 +82,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SizeSelectionWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -95,6 +97,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\memoItems.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>memoItems.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,6 +112,111 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\4x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\6x6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\8x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broccoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-controller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gingerbread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groceries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hippo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pineapple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pretzel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salami.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sauces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whale.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
